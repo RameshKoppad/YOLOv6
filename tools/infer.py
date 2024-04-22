@@ -22,7 +22,7 @@ def get_args_parser(add_help=True):
     parser.add_argument('--webcam', action='store_true', help='whether to use webcam.')
     parser.add_argument('--webcam-addr', type=str, default='0', help='the web camera address, local camera or rtsp address.')
     parser.add_argument('--yaml', type=str, default='data/coco.yaml', help='data yaml file.')
-    parser.add_argument('--img-size', nargs='+', type=int, default=[640, 640], help='the image-size(h,w) in inference size.')
+    parser.add_argument('--img-size=[1152,1920]', nargs='+', type=int, default=[640, 640], help='the image-size(h,w) in inference size.')
     parser.add_argument('--conf-thres', type=float, default=0.4, help='confidence threshold for inference.')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='NMS IoU threshold for inference.')
     parser.add_argument('--max-det', type=int, default=1000, help='maximal inferences per image.')
